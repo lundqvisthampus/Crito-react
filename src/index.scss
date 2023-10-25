@@ -1,0 +1,18 @@
+@import './assets/components/generics/Button';
+@import './assets/components/generics/SectionTitle';
+@import './assets/components/Header';
+
+html, body {
+    color: #191919;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 2;
+}
+
+.wrapper {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+}
