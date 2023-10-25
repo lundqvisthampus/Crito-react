@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink, Link } from 'react-router-dom';
-import Logotype from '../images/logo.svg';
-import Button from './generics/Button';
+import Logotype from '../../images/logo.svg';
+import Button from '../generics/Button';
 
 const Header = () => {
   return (
@@ -28,10 +28,10 @@ const Header = () => {
                 </div>
             </div>
             <div className="socialmedia-bar">
-                <a href="https://facebook.com" target="blank"><i className="fa-brands fa-facebook"></i></a>
-                <a href="https://twitter.com" target="blank"><i className="fa-brands fa-x-twitter"></i></a>
-                <a href="https://instagram.com" target="blank"><i className="fa-brands fa-instagram"></i></a>
-                <a href="https://linkedin.com" target="blank"><i className="fa-brands fa-linkedin"></i></a>
+                <a href="https://facebook.com" target="_blank"><i className="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com" target="_blank"><i className="fa-brands fa-x-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank"><i className="fa-brands fa-instagram"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i className="fa-brands fa-linkedin"></i></a>
             </div>
             <div className="menu">
                 <nav>
@@ -40,11 +40,11 @@ const Header = () => {
                     <NavLink to='/news'>News</NavLink>
                     <NavLink to='/contact'>Contact</NavLink>
                 </nav>
-                <Button type="yellow" url="login.html" title="Login"/>
+                <Button type="yellow" url="/login" title="Login"/>
             </div>
         </div>
     </header>
   )
-}
+};
 
 export default Header
