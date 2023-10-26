@@ -1,0 +1,21 @@
+.brands-section {
+    padding: 60px 0px;
+
+    .container {
+        display: flex;
+        justify-content: center;
+
+        .brands {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            @media (min-width: 768px) {
+                grid-template-columns: repeat(3, 1fr); 
+            }
+
+            @media (min-width: 1200px) {
+                grid-template-columns: repeat(5, 1fr);
+            }
+        }
+    }
+}

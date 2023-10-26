@@ -1,0 +1,92 @@
+.our-services-section {
+    background-color: #F0EFE9;
+    position: relative;
+    z-index: 0;
+
+    .bkg-whitelines-right {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+    }
+
+    .container {
+        text-align: center;
+
+        .section-title {
+            padding-bottom: 40px;
+            padding-top: 80px;
+
+            h2 {
+                padding-top: 10px;
+            }
+            
+            @media (min-width: 1200px) {
+                text-align: start;
+                padding: 100px 700px 40px 12px;
+            }
+        }
+
+        .services {
+            text-align: start;
+            display: flex;
+
+            .first-boxes, .second-boxes {
+                @media (min-width: 1200px) {
+                    display: flex;
+                }
+
+                .consulting-box {
+                    padding: 15px 20px;
+                    background-color: white;
+                    margin: 0px 12px 24px 12px;
+                    display: block;
+                    text-decoration: none;
+                    transition: box-shadow 0.2s ease-in-out,
+                    background-color 0.2s ease-in-out;
+
+                    @media (min-width: 768px) {
+                        padding: 30px 20px;
+                    }
+
+                    &:hover {
+                        box-shadow: 4px 4px 4px 1px rgba(61, 61, 61, 0.5);
+                        background-color: #F9D783;
+                    }
+
+                    h3 {
+                        color: #191919;
+                        padding-top: 30px;
+                        font-family: 'DM Sans', sans-serif;
+                        font-size: 22px;
+                        font-weight: 700;
+                    }
+
+                    p {
+                        color: #636363;
+                        padding: 10px 0px;
+                    }
+
+                    i {
+                        font-size: 50px;
+                        display: block;
+                        text-align: end;
+                        --fa-primary-color: #ffffff;
+                        --fa-secondary-color: #191919;
+                        --fa-secondary-opacity: 1;
+                    }
+                }
+            }
+        }
+
+        .browse-services {
+            padding-top: 50px;
+            padding-bottom: 110px;
+
+            .btn-transparent {
+                padding-top: 16px;
+                padding-bottom: 16px;
+            }
+        }
+    }
+}

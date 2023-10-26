@@ -1,0 +1,105 @@
+.about-company-section {
+    margin-top: 70px;
+
+    @media (min-width: 1200px) {
+        margin: 100px 0px 50px;
+    }
+    
+    .container {
+        display: flex;
+        position: relative;
+
+        .company-images {
+            display: none;
+            padding-left: 55px;
+            padding-right: 20px;
+
+            .company-img2 {
+                position: absolute;
+                left: -50px;
+                bottom: 68px;
+
+                @media (min-width: 1400px) {
+                    left: -50px;
+                    bottom: 36px;  
+                }
+            }
+
+            .company-img3 {
+                position: absolute;
+                top: 40px;
+                left: 20px;
+            }
+
+            @media (min-width: 1200px) {
+                display: inline;
+            }
+        }
+
+        .section-title {
+            padding-top: 0;
+            padding-left: 50px;
+            padding-right: 55px;
+            text-align: center;
+
+            @media (min-width: 1200px) {
+                text-align: start;
+            }
+
+            @media (min-width: 1400px) {
+                padding-left: 100px;
+            }
+
+            h2 {
+                padding-top: 10px;
+                padding-bottom: 30px;
+            }
+
+            .main-text {
+                color: #636363;
+                padding-bottom: 40px;
+            }
+
+            .bottom-buttons {
+                display: flex;
+                gap: 30px;
+                justify-content: center;
+
+                @media (min-width: 1200px) {
+                    justify-content: start;
+                }
+
+                @media (min-width: 1400px) {
+                    padding-top: 30px;
+                }
+
+                .btn-black {
+                    padding: 10px 22px;
+
+                    @media (min-width: 1200px) {
+                        padding: 10px 36px;
+                    }
+                }
+
+
+                .video-button {
+                    display: flex;
+                    align-items: center;
+                    font-weight: 600;
+                    text-decoration: none;
+                    color: #191919;
+                    transition: color 0.2s ease-in-out;
+
+                    &:hover {
+                        color: #969696;
+                    }
+
+                    i {
+                        font-size: 54px;
+                        padding-right: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
