@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,900&display=swap');
 
 @import './assets/components/generics/Button';
+@import './assets/components/generics/ButtonDots';
 @import './assets/components/generics/SectionTitle';
 @import './assets/components/header/Header';
 @import './assets/components/showcase/Showcase';
@@ -11,6 +12,9 @@
 @import './assets/components/ourservices/Ourservices';
 @import './assets/components/whychooseus/Whychooseus';
 @import './assets/components/projectcasestudies/ProjectAndCaseStudies';
+@import './assets/components/meetourteam/Meetourteam';
+@import './assets/components/testimonial/Testimonial';
+@import './assets/components/articleandnews/Articleandnews';
 
 html, body {
     color: #191919;

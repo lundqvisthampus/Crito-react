@@ -1,0 +1,33 @@
+.buttonDotsLight {
+    margin: 0px 8px;
+    padding: 6px;
+    border-radius: 50%;
+    background-color: #19191954;
+    border: none;
+    transition: background-color 0.15s ease-in-out;
+
+    &:hover {
+        background-color: #191919a8;
+    }
+
+    &:active {
+        background-color: #191919;
+    }
+}
+
+.buttonDotsDark {
+    margin: 0px 8px;
+    padding: 6px;
+    border-radius: 50%;
+    background-color: #191919;
+    border: none;
+    transition: background-color 0.15s ease-in-out;
+
+    &:hover {
+        background-color: #191919a8;
+    }
+
+    &:active {
+        background-color: #191919;
+    }
+}

@@ -1,0 +1,89 @@
+.testimonial-section {
+    background-color: #F0D082;
+    padding-bottom: 120px;
+
+    .container {
+        background-color: white;
+        padding: 0px 120px 120px 120px;
+        text-align: center;
+
+        @media (min-width: 1400px) {
+            max-width: 1520px;
+        }
+
+        .section-title {
+            padding-bottom: 70px;
+        }
+
+        .btn-black {
+            padding: 14px 30px;
+        }
+
+        .reviews {  
+            margin-bottom: 100px;
+            gap: 90px;
+
+            @media (min-width: 1200px) {
+                display: flex;
+            }
+
+            .review-box {
+                text-align: start;
+                margin-bottom: 70px;
+
+                @media (min-width: 1200px) {
+                    margin-bottom: 0;
+                }
+
+                i {
+                    color: #F94D1C;
+                    margin-bottom: 18px;
+                    font-size: 14px;
+                }
+
+                .client {
+                    display: flex;
+                    align-items: center;
+
+                    @media (min-width: 1200px) {
+                        display: block;
+                        margin-top: 40px;
+                    }
+
+                    @media (min-width: 1400px) {
+                        display: flex;
+                    }
+
+                    img {
+                        margin-right: 16px;
+                        margin-bottom: 16px;
+                        display: none;
+
+                        @media (min-width: 768px) {
+                            display: inline;
+                        }
+                    }
+
+                    .client-info {
+                        h3 {
+                            font-family: 'DM Sans', sans-serif;
+                            font-size: 19px;
+                            font-weight: 900;
+                            margin: 0;
+
+                            @media (min-width: 1200px) {
+                                font-size: 22px;
+                                font-weight: 700;
+                            }
+                        }
+    
+                        p {
+                            color: #F94D1C;
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

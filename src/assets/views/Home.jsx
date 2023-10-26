@@ -7,6 +7,9 @@ import AboutCompany from '../components/aboutcompany/AboutCompany.jsx';
 import Ourservices from '../components/ourservices/Ourservices.jsx';
 import Whychooseus from '../components/whychooseus/Whychooseus.jsx';
 import ProjectAndCaseStudies from '../components/projectcasestudies/ProjectAndCaseStudies.jsx';
+import Meetourteam from '../components/meetourteam/Meetourteam.jsx';
+import Testimonial from '../components/testimonial/Testimonial.jsx';
+import Articleandnews from '../components/articleandnews/Articleandnews.jsx';
 
 const Home = () => {
   return (
@@ -20,6 +23,9 @@ const Home = () => {
         <Ourservices />
         <Whychooseus />
         <ProjectAndCaseStudies />
+        <Meetourteam />
+        <Testimonial />
+        <Articleandnews />
       </main>
     </div>
   )
