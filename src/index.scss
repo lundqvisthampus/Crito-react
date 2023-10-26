@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@400;700&family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,900&display=swap');
+
 @import './assets/components/generics/Button';
 @import './assets/components/generics/SectionTitle';
 @import './assets/components/header/Header';
@@ -6,6 +9,8 @@
 @import './assets/components/features/Features';
 @import './assets/components/aboutcompany/AboutCompany';
 @import './assets/components/ourservices/Ourservices';
+@import './assets/components/whychooseus/Whychooseus';
+@import './assets/components/projectcasestudies/ProjectAndCaseStudies';
 
 html, body {
     color: #191919;
@@ -20,4 +25,10 @@ html, body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr auto;
+}
+
+.center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

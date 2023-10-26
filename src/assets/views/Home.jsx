@@ -5,6 +5,8 @@ import Brands from '../components/brands/Brands.jsx'
 import Features from '../components/features/Features.jsx';
 import AboutCompany from '../components/aboutcompany/AboutCompany.jsx';
 import Ourservices from '../components/ourservices/Ourservices.jsx';
+import Whychooseus from '../components/whychooseus/Whychooseus.jsx';
+import ProjectAndCaseStudies from '../components/projectcasestudies/ProjectAndCaseStudies.jsx';
 
 const Home = () => {
   return (
@@ -16,6 +18,8 @@ const Home = () => {
         <Features />
         <AboutCompany />
         <Ourservices />
+        <Whychooseus />
+        <ProjectAndCaseStudies />
       </main>
     </div>
   )
