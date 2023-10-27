@@ -10,6 +10,8 @@ import ProjectAndCaseStudies from '../components/projectcasestudies/ProjectAndCa
 import Meetourteam from '../components/meetourteam/Meetourteam.jsx';
 import Testimonial from '../components/testimonial/Testimonial.jsx';
 import Articleandnews from '../components/articleandnews/Articleandnews.jsx';
+import Newsletter from '../components/newsletter/Newsletter.jsx';
+import Footer from '../components/footer/Footer.jsx';
 
 const Home = () => {
   return (
@@ -26,7 +28,9 @@ const Home = () => {
         <Meetourteam />
         <Testimonial />
         <Articleandnews />
+        <Newsletter />
       </main>
+      <Footer />
     </div>
   )
 }

@@ -20,12 +20,12 @@ const Meetourteam = () => {
             </div>
             <div className="team-members">
                 <div className="members-first">
-                    <Teammember name="Kristine Palmer" text="Chef Operation Officer" image={KristineImg} url="/member/kristine" alt="Image of Kristine Palmer" />
-                    <Teammember name="Mark Aubri" text="Senior Consultant" image={MarkImg} url="/member/mark" alt="Image of Mark Aubri" />
+                    <Teammember name="Kristine Palmer" text="Chef Operation Officer" image={KristineImg} url="/member/kristine" />
+                    <Teammember name="Mark Aubri" text="Senior Consultant" image={MarkImg} url="/member/mark" />
                 </div>
                 <div className="members-second">
-                    <Teammember name="Kimberly Hansen" text="Senior Consultant" image={KimberlyImg} url="/member/kimberly" alt="Image of Kimberly Hansen" />
-                    <Teammember name="Justin Willoman" text="Senior Tech Consultant" image={JustinImg} url="/member/justin" alt="Image of Justin Willoman" />
+                    <Teammember name="Kimberly Hansen" text="Senior Consultant" image={KimberlyImg} url="/member/kimberly" />
+                    <Teammember name="Justin Willoman" text="Senior Tech Consultant" image={JustinImg} url="/member/justin" />
                 </div>
             </div>
             <div className="btn-multiple-dots">

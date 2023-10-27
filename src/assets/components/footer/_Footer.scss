@@ -1,0 +1,114 @@
+footer {
+    background-color: #0E1021;
+    
+    .top-footer {
+        position: relative;
+        z-index: 0;
+
+        .bkg-lines-right {
+            position: absolute;
+            z-index: -1;
+            bottom: 0;
+            right: 0;
+        }
+
+        .container {
+            text-align: center;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 55px;
+            padding-bottom: 45px;
+
+            @media (min-width: 1200px) {
+                display: flex;
+                text-align: start;
+                padding-top: 110px;
+                padding-bottom: 90px;
+            }
+
+            .crito-box {
+                img {
+                    margin-bottom: 30px;
+                }
+
+                p {
+                    color:#b8b8b8;
+                }
+            }
+
+            .all-info-boxes {
+                display: flex;
+                justify-content: center;
+                gap: 50px;
+
+                @media (min-width: 1400px) {
+                    gap: 100px;
+                }
+
+                .info-box {
+                    .h3-link {
+                        text-decoration: none;
+                        color: #FFFFFF;
+                        font-family: 'DM Sans', sans-serif;
+                        font-size: 22px;
+                        font-weight: 700;
+                        text-decoration: none;
+                        display: block;
+                        margin-bottom: 20px;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+    
+                    a {
+                        color:#b8b8b8;
+                        display: none;
+                        text-decoration: none;
+    
+                        &:hover {
+                            text-decoration: underline;
+                        }
+
+                        @media (min-width: 1200px) {
+                            display: block;
+                            padding-top: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .bottom-footer {
+        padding-top: 30px;
+        padding-bottom: 14px;
+        border-top: 1px solid #5a5a5a;
+
+        .container {
+            text-align: center;
+
+            @media (min-width: 768px) {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            p {
+                color:#b8b8b8;
+            }
+
+            .socialmedia-bar {
+                a {
+                    color: #FFFFFF;
+                    font-size: 1.3rem;
+                    margin-left: 10px;
+                    transition: color 0.2s;
+    
+                    &:hover {
+                        color: #7c7c7c;
+                    }
+                }
+            }
+        }
+    }
+}
