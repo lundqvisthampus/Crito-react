@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../components/header/Header';
 import Footer from '../components/footer/Footer'
-import Letsconnect from '../components/letsconnect/Letsconnect';
+import UpperSection from '../components/uppersection/UpperSection';
 import Contactus from '../components/contactus/contactus';
 import Messageus from '../components/messageus/Messageus';
 import Mapslocation from '../components/mapslocation/Mapslocation';
@@ -11,7 +11,7 @@ const Contact = () => {
     <div className='wrapper'>
       <Header />
       <main>
-        <Letsconnect />
+        <UpperSection page="Contact" header="Let's Connect" />
         <Contactus />
         <Messageus />
         <Mapslocation />
