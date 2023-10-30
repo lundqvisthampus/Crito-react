@@ -32,20 +32,34 @@
             
             input {
                 padding: 12px 32px;
-                margin-bottom: 16px;
                 outline: none;
                 border-radius: 32px;
-                border: none;
+                border: 1px solid transparent;
+            }
+
+            .textError {
+                height: 24px;
+                font-size: 0.9rem;
+                color: #ff4747;
+                padding-left: 32px;
+            }
+
+            .error {
+                background-color: #ffdede;
+                border-color: #ff4747;
             }
 
             textarea {
-                margin-bottom: 45px;
                 padding: 12px 32px 100px;
                 border-radius: 32px;
-                border: none;
+                border: 1px solid transparent;
                 line-height: 1.5;
                 resize: none;
                 outline: none;
+            }
+
+            button {
+                margin-top: 45px;
             }
         }
     }

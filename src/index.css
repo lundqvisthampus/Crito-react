@@ -1238,19 +1238,30 @@ footer .bottom-footer .container .socialmedia-bar a:hover {
 }
 .message-container .message-box form input {
   padding: 12px 32px;
-  margin-bottom: 16px;
   outline: none;
   border-radius: 32px;
-  border: none;
+  border: 1px solid transparent;
+}
+.message-container .message-box form .textError {
+  height: 24px;
+  font-size: 0.9rem;
+  color: #ff4747;
+  padding-left: 32px;
+}
+.message-container .message-box form .error {
+  background-color: #ffdede;
+  border-color: #ff4747;
 }
 .message-container .message-box form textarea {
-  margin-bottom: 45px;
   padding: 12px 32px 100px;
   border-radius: 32px;
-  border: none;
+  border: 1px solid transparent;
   line-height: 1.5;
   resize: none;
   outline: none;
+}
+.message-container .message-box form button {
+  margin-top: 45px;
 }
 
 .google-maps iframe {

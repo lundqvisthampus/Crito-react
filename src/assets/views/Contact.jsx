@@ -3,7 +3,7 @@ import Header from '../components/header/Header';
 import Footer from '../components/footer/Footer'
 import UpperSection from '../components/uppersection/UpperSection';
 import Contactus from '../components/contactus/contactus';
-import Messageus from '../components/messageus/Messageus';
+import Messages from '../components/messageus/Messages';
 import Mapslocation from '../components/mapslocation/Mapslocation';
 
 const Contact = () => {
@@ -13,7 +13,7 @@ const Contact = () => {
       <main>
         <UpperSection page="Contact" header="Let's Connect" />
         <Contactus />
-        <Messageus />
+        <Messages />
         <Mapslocation />
       </main>
       <Footer />
