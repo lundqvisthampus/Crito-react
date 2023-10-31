@@ -929,7 +929,8 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
 .article-news-section .container .articles-and-news .article img {
   margin-top: 60px;
   margin-bottom: 20px;
-  width: 100%;
+  height: 230px;
+  width: 420px;
   transition: box-shadow 0.2s ease-in-out;
 }
 @media (min-width: 1200px) {

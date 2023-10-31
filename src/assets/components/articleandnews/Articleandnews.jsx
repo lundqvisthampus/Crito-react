@@ -16,9 +16,7 @@ const Articleandnews = () => {
                 <Button title="Browse Articles" url="/articles" />
             </div>
             <div className="articles-and-news">
-                <Article image={ArticleImg1} alt="Image from the article" category="Business" title="How To Use Digitalization In The classNameroom" url="#" text="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero." />
-                <Article image={ArticleImg2} alt="Image from the article" category="Business" title="How To Implement Chat GPT In Your Projects" url="#" text="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero." />
-                <Article image={ArticleImg3} alt="Image from the article" category="Business" title="The Guide To Support Modern CSS Design" url="#" text="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero." />
+                <Article />
             </div>
             <div className="center-content">
                 <ButtonDots type="dark" />

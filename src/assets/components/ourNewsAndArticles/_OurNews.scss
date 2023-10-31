@@ -1,0 +1,54 @@
+.container {
+
+    .ourArticles {
+        gap: 20px;
+
+        @media (min-width: 768px) {
+            display: flex;
+        }
+
+        .article {
+            color: #191919;
+            text-decoration: none;
+
+            img {
+                margin-top: 60px;
+                margin-bottom: 20px;
+                height: 230px;
+                width: 420px;
+                transition: box-shadow 0.2s ease-in-out;
+
+                @media (min-width: 1200px) {
+                    margin: 20px 0px;
+                }
+            }
+
+            &:hover img {
+                box-shadow: 4px 4px 4px 1px rgba(61, 61, 61, 0.5);
+            }
+
+            h3 {
+                width: 80%;
+                padding-right: 20px;
+                font-family: 'DM Sans', sans-serif;
+                font-size: 22px;
+                font-weight: 700;
+                text-decoration: underline;
+                text-decoration-color: transparent;
+                transition: text-decoration-color 0.2s ease-in-out;
+            }
+
+            &:hover h3 {
+                text-decoration-color: #191919;
+            }
+
+            p {
+                color:#636363;
+            }
+        }
+    }
+
+    .center-content {
+        padding-top: 40px;
+    }
+}

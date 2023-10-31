@@ -3,7 +3,7 @@ import Header from '../components/header/Header';
 import Footer from '../components/footer/Footer'
 import UpperSection from '../components/uppersection/UpperSection';
 import Contactus from '../components/contactus/contactus';
-import Messages from '../components/messageus/Messages';
+import Messages from '../components/messages/Messages';
 import Mapslocation from '../components/mapslocation/Mapslocation';
 
 const Contact = () => {

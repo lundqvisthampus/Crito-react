@@ -7,7 +7,7 @@ import gobonaLogo from '../../images/gobona-logo.svg'
 
 const Brands = () => {
 
-  const logos = [
+  const logotypes = [
     { src: paperzLogo, alt: "Paperz company logotype" },
     { src: dorfusLogo, alt: "Dorfus company logotype" },
     { src: martinoLogo, alt: "Martino company logotype" },
@@ -15,19 +15,16 @@ const Brands = () => {
     { src: gobonaLogo, alt: "Gobona company logotype" }
   ];
 
-  const logoElements = [];
+  const brandsList = logotypes.map((logotype, index) => (
+    <img key={index} src={logotype.src} alt={logotype.alt} />
+  ));
 
-  for (let i = 0; i < logos.length; i++) {
-    logoElements.push(
-      <img key={i} src={logos[i].src} alt={logos[i].alt} />
-    );
-  };
 
   return (
     <section className="brands-section">
       <div className="container">
         <div className="brands">
-          {logoElements}
+          {brandsList}
         </div>
       </div>
     </section>
