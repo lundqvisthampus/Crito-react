@@ -1,11 +1,17 @@
 .container {
+    .newsHeader {
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 700;
+        font-size: 45px;
+        color: #191919;
+        margin-top: 120px;
+        margin-bottom: 20px;
+    }
 
     .ourArticles {
         gap: 20px;
-
-        @media (min-width: 768px) {
-            display: flex;
-        }
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
 
         .article {
             color: #191919;
@@ -50,5 +56,20 @@
 
     .center-content {
         padding-top: 40px;
+        
+        button {
+            margin: 0px 4px;
+            padding: 0px 10px;
+            border: 1px solid #c0c0c0;
+            background-color: #ffffff;
+            border-radius: 5px;
+            font-weight: 500;
+            transition: background-color 0.2s, color 0.2s;
+
+            &:hover {
+                background-color: #191919;
+                color: #ffffff;
+            }
+        }
     }
 }

@@ -19,7 +19,7 @@ const OurNews = () => {
 
   return (
     <div className="container">
-      <h2>Our News & Articles</h2>
+      <h2 className="newsHeader">Our News & Articles</h2>
       <div className="ourArticles">
         {articles.map(article => (
           <div className="article" key={article.id}>
@@ -28,9 +28,17 @@ const OurNews = () => {
             <h3>{article.title}</h3>
             <p>{article.content}</p>
           </div>
-          ))
-        }
+          ))}
       </div>
+      <div className="center-content">
+          <button type="button">&#60;</button>
+          <button type="button">1</button>
+          <button type="button">2</button>
+          <button type="button">3</button>
+          <button type="button">...</button>
+          <button type="button">9</button>
+          <button type="button">&#62;</button>
+        </div>
     </div> 
   );
 };
