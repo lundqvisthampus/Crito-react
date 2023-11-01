@@ -1,0 +1,87 @@
+.articleDetails {
+    margin-top: 100px;
+    display: flex;
+    font-family: 'DM Sans', sans-serif;
+    .container {
+        display: flex;
+        justify-content: space-between;
+
+        .leftContent {
+            h2 {         
+                font-size: 45px;
+                font-weight: 700;
+                margin-bottom: 20px;
+            }
+
+            p {
+                display: inline-block;
+                font-size: 20px;
+                font-weight: 500;
+                margin-bottom: 50px;
+            }
+
+            .yellowDot {
+                height: 12px;
+                width: 12px;
+                background-color: #F9D783;
+                display: inline-block;
+                border-radius: 50%;
+                margin: 0px 20px;
+            }
+
+            img {
+                height:450px;
+                width: 750px;
+                display: block;
+            }
+        }
+
+       .rightContent {
+        position: relative;
+        margin-top: 160px;
+
+        i {
+            position: absolute;
+            top: 18px;
+            left: 24px;
+        }
+
+        input {
+            outline: 0;
+            padding: 10px 50px;
+            background-color: #F3F3F3;
+            border: none;
+            border-radius: 30px;
+            width: 400px;
+            margin-bottom: 40px;
+        }
+
+        .recentPostsBox {
+            width: 400px;
+            padding: 26px;
+            border: 2px solid #F0EFE9;
+
+            h4 {
+                font-size: 22px;
+                font-weight: 700;
+                text-decoration: underline;
+                margin-bottom: 20px;
+            }
+
+            .recentPost {
+                border-bottom: 2px solid #F0EFE9;
+                margin-bottom: 10px;
+                .postTitle {
+                    font-weight: 700;
+                    margin: 0;
+                }
+
+                .postDate {
+                    font-family: 'Inter', sans-serif;
+                    color: #636363;
+                }
+            }
+        }
+       }
+    }
+}

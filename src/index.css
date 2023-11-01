@@ -1420,6 +1420,81 @@ footer .bottom-footer .container .socialmedia-bar a:hover {
   color: #ffffff;
 }
 
+.articleDetails {
+  margin-top: 100px;
+  display: flex;
+  font-family: "DM Sans", sans-serif;
+}
+.articleDetails .container {
+  display: flex;
+  justify-content: space-between;
+}
+.articleDetails .container .leftContent h2 {
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.articleDetails .container .leftContent p {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+.articleDetails .container .leftContent .yellowDot {
+  height: 12px;
+  width: 12px;
+  background-color: #F9D783;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 0px 20px;
+}
+.articleDetails .container .leftContent img {
+  height: 450px;
+  width: 750px;
+  display: block;
+}
+.articleDetails .container .rightContent {
+  position: relative;
+  margin-top: 160px;
+}
+.articleDetails .container .rightContent i {
+  position: absolute;
+  top: 18px;
+  left: 24px;
+}
+.articleDetails .container .rightContent input {
+  outline: 0;
+  padding: 10px 50px;
+  background-color: #F3F3F3;
+  border: none;
+  border-radius: 30px;
+  width: 400px;
+  margin-bottom: 40px;
+}
+.articleDetails .container .rightContent .recentPostsBox {
+  width: 400px;
+  padding: 26px;
+  border: 2px solid #F0EFE9;
+}
+.articleDetails .container .rightContent .recentPostsBox h4 {
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+.articleDetails .container .rightContent .recentPostsBox .recentPost {
+  border-bottom: 2px solid #F0EFE9;
+  margin-bottom: 10px;
+}
+.articleDetails .container .rightContent .recentPostsBox .recentPost .postTitle {
+  font-weight: 700;
+  margin: 0;
+}
+.articleDetails .container .rightContent .recentPostsBox .recentPost .postDate {
+  font-family: "Inter", sans-serif;
+  color: #636363;
+}
+
 html, body {
   color: #191919;
   font-family: "Inter", sans-serif;
