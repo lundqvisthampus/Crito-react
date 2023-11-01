@@ -5,9 +5,9 @@ import ButtonDots from '../generics/ButtonDots'
 import Article from './Article'
 
 
-const Articleandnews = () => {
+const Articleandnews2 = () => {
   return (
-    <section className="article-news-section">
+    <section className="article-news-section2">
         <div className="container">
             <div className="top-row">
                 <SectionTitle paragraph="Article & News" header="Get Every Single Articles & News" />
@@ -28,4 +28,4 @@ const Articleandnews = () => {
   )
 }
 
-export default Articleandnews
+export default Articleandnews2

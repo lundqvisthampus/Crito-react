@@ -1,16 +1,18 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
+import NumberedButtons from '../generics/NumberedButtons';
+import { Link } from 'react-router-dom';
 
 const OurNews = () => {
 
-  const [articles, setArticles] = useState ([])
+  const [articles, setArticles] = useState([]);
 
   const getArticles = async () => {
-
     const result = await fetch('https://win23-assignment.azurewebsites.net/api/articles');
-    const data = await result.json();
 
-    setArticles(data)
+    if (result.status === 200) {
+      setArticles(await result.json())
+    }
   }
 
   useEffect(() => {
@@ -22,23 +24,23 @@ const OurNews = () => {
       <h2 className="newsHeader">Our News & Articles</h2>
       <div className="ourArticles">
         {articles.map(article => (
-          <div className="article" key={article.id}>
+          <Link className="article" to={`/newsdetails/${article.id}`} key={article.id}>
             <img src={article.imageUrl}/>
             <p>{article.category}</p>
             <h3>{article.title}</h3>
             <p>{article.content}</p>
-          </div>
+          </Link>
           ))}
       </div>
       <div className="center-content">
-          <button type="button">&#60;</button>
-          <button type="button">1</button>
-          <button type="button">2</button>
-          <button type="button">3</button>
-          <button type="button">...</button>
-          <button type="button">9</button>
-          <button type="button">&#62;</button>
-        </div>
+          <NumberedButtons content="&lt;" />
+          <NumberedButtons content="1" />
+          <NumberedButtons content="2" />
+          <NumberedButtons content="3" />
+          <NumberedButtons content="..." />
+          <NumberedButtons content="9" />
+          <NumberedButtons content="&gt;" />
+      </div>
     </div> 
   );
 };
