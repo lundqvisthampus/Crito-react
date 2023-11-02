@@ -4,41 +4,89 @@
     font-family: 'DM Sans', sans-serif;
     .container {
         display: flex;
-        justify-content: space-between;
+        gap: 150px;
 
         .leftContent {
-            h2 {         
-                font-size: 45px;
-                font-weight: 700;
-                margin-bottom: 20px;
+
+            .articleInfo {
+                h2 {         
+                    font-size: 45px;
+                    font-weight: 700;
+                    margin-bottom: 20px;
+                    padding-right: 200px;
+                }
+    
+                p {
+                    display: inline-block;
+                    font-size: 20px;
+                    font-weight: 500;
+                    margin-bottom: 50px;
+                }
+    
+                .yellowDot {
+                    height: 12px;
+                    width: 12px;
+                    background-color: #F9D783;
+                    display: inline-block;
+                    border-radius: 50%;
+                    margin: 0px 20px;
+                }
+    
+                img {
+                    height:450px;
+                    width: 750px;
+                    display: block;
+                }
             }
 
-            p {
-                display: inline-block;
-                font-size: 20px;
-                font-weight: 500;
-                margin-bottom: 50px;
+            .articleText {
+
+                p {
+                    margin-top:30px;
+                    font-family: 'Inter', sans-serif;
+                    color: #636363;
+                }
+
+                .textQuoteBox {
+                    display: flex;
+                    margin-top: 30px;
+
+                    p{
+                        font-family: 'DM Sans', sans-serif;
+                        font-size: 22px;
+                        color: #191919;
+                        line-height: 1.5;
+                        margin-top: 10px;
+                    }
+
+                    i {
+                        font-size: 42px;
+                        padding-right: 30px;
+                    }
+                    
+                }
             }
 
-            .yellowDot {
-                height: 12px;
-                width: 12px;
-                background-color: #F9D783;
-                display: inline-block;
-                border-radius: 50%;
-                margin: 0px 20px;
-            }
+            .articleCategories {
+                display: flex;
+                gap: 20px;
+                margin-top: 40px;
+                margin-bottom: 60px;
 
-            img {
-                height:450px;
-                width: 750px;
-                display: block;
+                div {
+                    display: inline-block;
+                    background-color: #F0EFE9;
+                    font-size: 14px;
+                    padding: 5px 30px;
+                    border-radius: 20px;
+                    font-weight: 500;
+                }
             }
         }
 
        .rightContent {
         position: relative;
-        margin-top: 160px;
+        margin-top: 210px;
 
         i {
             position: absolute;
@@ -49,7 +97,7 @@
         input {
             outline: 0;
             padding: 10px 50px;
-            background-color: #F3F3F3;
+            background-color: #F0EFE9;
             border: none;
             border-radius: 30px;
             width: 400px;
@@ -61,6 +109,10 @@
             padding: 26px;
             border: 2px solid #F0EFE9;
 
+            #noBorder {
+                border: none;
+            }
+
             h4 {
                 font-size: 22px;
                 font-weight: 700;
@@ -71,6 +123,7 @@
             .recentPost {
                 border-bottom: 2px solid #F0EFE9;
                 margin-bottom: 10px;
+
                 .postTitle {
                     font-weight: 700;
                     margin: 0;
@@ -80,8 +133,32 @@
                     font-family: 'Inter', sans-serif;
                     color: #636363;
                 }
+
+                }
             }
         }
-       }
+
+        .categoriesBox {
+            width: 400px;
+            padding: 26px;
+            border: 2px solid #F0EFE9;
+            margin-top: 50px;
+
+            h4 {
+                font-size: 22px;
+                font-weight: 700;
+                text-decoration: underline;
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-weight: 700;
+                margin-bottom: 5px;
+            }
+
+            span {
+                color: #636363;
+            }
+        }
     }
 }

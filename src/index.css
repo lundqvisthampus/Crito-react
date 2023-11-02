@@ -1427,20 +1427,21 @@ footer .bottom-footer .container .socialmedia-bar a:hover {
 }
 .articleDetails .container {
   display: flex;
-  justify-content: space-between;
+  gap: 150px;
 }
-.articleDetails .container .leftContent h2 {
+.articleDetails .container .leftContent .articleInfo h2 {
   font-size: 45px;
   font-weight: 700;
   margin-bottom: 20px;
+  padding-right: 200px;
 }
-.articleDetails .container .leftContent p {
+.articleDetails .container .leftContent .articleInfo p {
   display: inline-block;
   font-size: 20px;
   font-weight: 500;
   margin-bottom: 50px;
 }
-.articleDetails .container .leftContent .yellowDot {
+.articleDetails .container .leftContent .articleInfo .yellowDot {
   height: 12px;
   width: 12px;
   background-color: #F9D783;
@@ -1448,14 +1449,48 @@ footer .bottom-footer .container .socialmedia-bar a:hover {
   border-radius: 50%;
   margin: 0px 20px;
 }
-.articleDetails .container .leftContent img {
+.articleDetails .container .leftContent .articleInfo img {
   height: 450px;
   width: 750px;
   display: block;
 }
+.articleDetails .container .leftContent .articleText p {
+  margin-top: 30px;
+  font-family: "Inter", sans-serif;
+  color: #636363;
+}
+.articleDetails .container .leftContent .articleText .textQuoteBox {
+  display: flex;
+  margin-top: 30px;
+}
+.articleDetails .container .leftContent .articleText .textQuoteBox p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 22px;
+  color: #191919;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+.articleDetails .container .leftContent .articleText .textQuoteBox i {
+  font-size: 42px;
+  padding-right: 30px;
+}
+.articleDetails .container .leftContent .articleCategories {
+  display: flex;
+  gap: 20px;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+.articleDetails .container .leftContent .articleCategories div {
+  display: inline-block;
+  background-color: #F0EFE9;
+  font-size: 14px;
+  padding: 5px 30px;
+  border-radius: 20px;
+  font-weight: 500;
+}
 .articleDetails .container .rightContent {
   position: relative;
-  margin-top: 160px;
+  margin-top: 210px;
 }
 .articleDetails .container .rightContent i {
   position: absolute;
@@ -1465,7 +1500,7 @@ footer .bottom-footer .container .socialmedia-bar a:hover {
 .articleDetails .container .rightContent input {
   outline: 0;
   padding: 10px 50px;
-  background-color: #F3F3F3;
+  background-color: #F0EFE9;
   border: none;
   border-radius: 30px;
   width: 400px;
@@ -1475,6 +1510,9 @@ footer .bottom-footer .container .socialmedia-bar a:hover {
   width: 400px;
   padding: 26px;
   border: 2px solid #F0EFE9;
+}
+.articleDetails .container .rightContent .recentPostsBox #noBorder {
+  border: none;
 }
 .articleDetails .container .rightContent .recentPostsBox h4 {
   font-size: 22px;
@@ -1492,6 +1530,25 @@ footer .bottom-footer .container .socialmedia-bar a:hover {
 }
 .articleDetails .container .rightContent .recentPostsBox .recentPost .postDate {
   font-family: "Inter", sans-serif;
+  color: #636363;
+}
+.articleDetails .container .categoriesBox {
+  width: 400px;
+  padding: 26px;
+  border: 2px solid #F0EFE9;
+  margin-top: 50px;
+}
+.articleDetails .container .categoriesBox h4 {
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+.articleDetails .container .categoriesBox p {
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.articleDetails .container .categoriesBox span {
   color: #636363;
 }
 
