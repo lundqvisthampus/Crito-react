@@ -1,7 +1,7 @@
 import React from 'react';
-import bkgWhitelines from '../../images/showcase-whitelines.svg';
-import showcaseImg from '../../images/showcase-image.svg';
-import Button from '../generics/Button';
+import bkgWhitelines from '../../../images/showcase-whitelines.svg';
+import showcaseImg from '../../../images/showcase-image.svg';
+import Button from '../../generics/Button';
 
 const Showcase = () => {
   return (

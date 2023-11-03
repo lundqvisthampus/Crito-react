@@ -1,8 +1,8 @@
 import React from 'react'
-import SectionTitle from '../generics/SectionTitle'
+import SectionTitle from '../../generics/SectionTitle'
 import Ourservicebox from './Ourservicebox'
-import Button from '../generics/Button'
-import BkglinesImg from '../../images/our-services-whitelines.svg'
+import Button from '../../generics/Button'
+import BkglinesImg from '../../../images/our-services-whitelines.svg'
 
 const Ourservices = () => {
   return (

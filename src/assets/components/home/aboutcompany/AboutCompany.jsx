@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import Button from '../generics/Button'
-import WomanImg from '../../images/about-company-1.png'
-import QuoteImg from '../../images/about-company-2.png'
-import WhitelinesImg from '../../images/about-company-lines.svg'
+import Button from '../../generics/Button'
+import WomanImg from '../../../images/about-company-1.png'
+import QuoteImg from '../../../images/about-company-2.png'
+import WhitelinesImg from '../../../images/about-company-lines.svg'
 
 const AboutCompany = () => {
   return (

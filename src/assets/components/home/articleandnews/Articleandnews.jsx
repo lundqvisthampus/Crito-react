@@ -1,13 +1,13 @@
 import React from 'react'
-import SectionTitle from '../generics/SectionTitle'
-import Button from '../generics/Button'
-import ButtonDots from '../generics/ButtonDots'
+import SectionTitle from '../../generics/SectionTitle'
+import Button from '../../generics/Button'
+import ButtonDots from '../../generics/ButtonDots'
 import Article from './Article'
 
 
-const Articleandnews2 = () => {
+const Articleandnews = () => {
   return (
-    <section className="article-news-section2">
+    <section className="article-news-section">
         <div className="container">
             <div className="top-row">
                 <SectionTitle paragraph="Article & News" header="Get Every Single Articles & News" />
@@ -28,4 +28,4 @@ const Articleandnews2 = () => {
   )
 }
 
-export default Articleandnews2
+export default Articleandnews

@@ -1,10 +1,10 @@
 import React from 'react'
-import SectionTitle from '../generics/SectionTitle'
+import SectionTitle from '../../generics/SectionTitle'
 import ClientReview from './ClientReview'
-import Button from '../generics/Button'
-import CassandraImg from '../../images/client-1.png'
-import AmandaImg from '../../images/client-2.png'
-import JackImg from '../../images/client-3.png'
+import Button from '../../generics/Button'
+import CassandraImg from '../../../images/client-1.png'
+import AmandaImg from '../../../images/client-2.png'
+import JackImg from '../../../images/client-3.png'
 
 const Testimonial = () => {
   return (

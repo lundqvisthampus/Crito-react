@@ -1,11 +1,11 @@
 import React from 'react'
-import Button from '../generics/Button'
-import SectionTitle from '../generics/SectionTitle'
+import Button from '../../generics/Button'
+import SectionTitle from '../../generics/SectionTitle'
 import Articles from './Articles'
-import ArticleOne from '../../images/article-image-1.png'
-import ArticleTwo from '../../images/article-image-2.png'
-import ArticleThree from '../../images/article-image-3.png'
-import ArticleFour from '../../images/article-image-4.png'
+import ArticleOne from '../../../images/article-image-1.png'
+import ArticleTwo from '../../../images/article-image-2.png'
+import ArticleThree from '../../../images/article-image-3.png'
+import ArticleFour from '../../../images/article-image-4.png'
 
 const ProjectAndCaseStudies = () => {
   return (

@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
-import NumberedButtons from '../generics/NumberedButtons';
+import NumberedButtons from '../../generics/NumberedButtons';
 import { Link } from 'react-router-dom';
 
 const OurNews = () => {

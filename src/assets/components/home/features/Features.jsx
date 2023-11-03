@@ -1,5 +1,5 @@
 import React from 'react'
-import Button from '../generics/Button'
+import Button from '../../generics/Button'
 import Featuresbox from './Featuresbox'
 
 const Features = () => {

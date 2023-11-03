@@ -2,9 +2,9 @@ import React from 'react';
 import Header from '../components/header/Header';
 import Footer from '../components/footer/Footer'
 import UpperSection from '../components/uppersection/UpperSection';
-import Contactus from '../components/contactus/contactus';
-import Messages from '../components/messages/Messages';
-import Mapslocation from '../components/mapslocation/Mapslocation';
+import Contactus from '../components/contact/contactus/contactus';
+import Messages from '../components/contact/messages/Messages';
+import Mapslocation from '../components/contact/mapslocation/Mapslocation';
 
 const Contact = () => {
   return (

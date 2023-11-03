@@ -1,5 +1,4 @@
 import React from 'react'
-import Button from '../generics/Button'
 import { useState } from 'react';
 
 

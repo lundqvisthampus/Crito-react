@@ -1,8 +1,8 @@
 import React from 'react'
-import WomanImg from '../../images/why-us-1.png'
-import GreybkgImg from '../../images/why-us-2.png'
+import WomanImg from '../../../images/why-us-1.png'
+import GreybkgImg from '../../../images/why-us-2.png'
 import Expertise from './Expertise'
-import SectionTitle from '../generics/SectionTitle'
+import SectionTitle from '../../generics/SectionTitle'
 
 const Whychooseus = () => {
   return (

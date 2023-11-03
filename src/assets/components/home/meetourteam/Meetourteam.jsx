@@ -1,12 +1,12 @@
 import React from 'react'
-import Button from '../generics/Button';
-import ButtonDots from '../generics/ButtonDots';
-import SectionTitle from '../generics/SectionTitle';
+import Button from '../../generics/Button';
+import ButtonDots from '../../generics/ButtonDots';
+import SectionTitle from '../../generics/SectionTitle';
 import Teammember from './Teammember';
-import KristineImg from '../../images/member-kristine.png'
-import MarkImg from '../../images/member-mark.png'
-import KimberlyImg from '../../images/member-kimberly.png'
-import JustinImg from '../../images/member-justin.png'
+import KristineImg from '../../../images/member-kristine.png'
+import MarkImg from '../../../images/member-mark.png'
+import KimberlyImg from '../../../images/member-kimberly.png'
+import JustinImg from '../../../images/member-justin.png'
 
 const Meetourteam = () => {
   return (

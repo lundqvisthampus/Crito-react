@@ -1,9 +1,9 @@
 import React from 'react'
-import paperzLogo from '../../images/paperz-logo.svg'
-import dorfusLogo from '../../images/dorfus-logo.svg'
-import martinoLogo from '../../images/martino-logo.svg'
-import squareLogo from '../../images/square-logo.svg'
-import gobonaLogo from '../../images/gobona-logo.svg'
+import paperzLogo from '../../../images/paperz-logo.svg'
+import dorfusLogo from '../../../images/dorfus-logo.svg'
+import martinoLogo from '../../../images/martino-logo.svg'
+import squareLogo from '../../../images/square-logo.svg'
+import gobonaLogo from '../../../images/gobona-logo.svg'
 
 const Brands = () => {
 
