@@ -1,5 +1,6 @@
 import React from 'react'
 import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom';
 
 const Article = () => {
 
@@ -21,12 +22,12 @@ const Article = () => {
     <>
       {
         articles.map(article => (
-          <div className="article" key={article.id}>
+          <Link className="article" to={`/newsdetails/${article.id}`} key={article.id}>
               <img src={article.imageUrl}/>
               <p>{article.category}</p>
               <h3>{article.title}</h3>
               <p>{article.content}</p>
-          </div>
+          </Link>
         ))  
       }
     </>
