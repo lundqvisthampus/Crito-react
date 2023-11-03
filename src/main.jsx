@@ -6,10 +6,12 @@ import Contact from './assets/views/Contact';
 import News from './assets/views/News';
 import NewsDetails from './assets/views/NewsDetails';
 import './index.css';
+import ScrollToTop from './assets/components/ScrollToTop';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/contact' element={<Contact />} />
@@ -17,5 +19,5 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path='/newsdetails/:id' element={<NewsDetails />} />
       </Routes>
     </BrowserRouter>
-  </React.StrictMode>,
+  </React.StrictMode>
 )
