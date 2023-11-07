@@ -1,57 +1,78 @@
 import React from 'react'
 import { useState } from 'react';
 
-
-
 const Messages = () => {
 
   const [emailError, setEmailError] = useState('');
   const [nameError, setNameError] = useState('');
   const [messageError, setMessageError] = useState('');
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
 
   const validateEmail = (emailValue) => {
     const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-    return emailPattern.test(emailValue);
+    if (emailPattern.test(emailValue))
+      return true
+    return false
   }
 
   const validateName = (nameValue) => {
     if (nameValue.length >= 2)
-    return true;
+      return true
+    return false
   }
 
   const validateMessage = (messageValue) => {
     if (messageValue.length >= 10)
-    return true;
+      return true
+    return false
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const emailValue = e.target.inputEmail.value;
     const nameValue = e.target.inputName.value;
     const messageValue = e.target.textareaMessage.value;
 
     if (!validateEmail(emailValue)) {
-      setEmailError('Du måste ange en giltig e-postadress')
-      e.target.inputEmail.classList.add('error');
+      setEmailError('Please enter a valid email address.')
     } else {
       setEmailError('')
-      e.target.inputEmail.classList.remove('error');
+      setEmail(emailValue)
     }
 
     if (!validateName(nameValue)) {
-      setNameError('Du måste ange ett giltigt namn')
-      e.target.inputName.classList.add('error');
+      setNameError('Please enter a valid name.')
     } else {
       setNameError('')
-      e.target.inputName.classList.remove('error');
+      setName(nameValue)
     }
 
     if (!validateMessage(messageValue)) {
-      setMessageError('Ditt meddelande måste innehålla minst 10 tecken')
-      e.target.textareaMessage.classList.add('error');
+      setMessageError('Your message needs to contain at least 10 characters.')
     } else {
       setMessageError('')
-      e.target.textareaMessage.classList.remove('error');
+      setMessage(messageValue)
+    }
+
+    if (validateEmail(emailValue) && validateName(nameValue) && validateMessage(messageValue)) {
+      
+      const result = await fetch('https://win23-assignment.azurewebsites.net/api/contactform', {
+        method: 'post',
+        headers: {
+          'content-type' : 'application/json'
+        },
+        body: JSON.stringify({
+          name, email, message
+        })
+      })
+
+      if (result.status === 200) {
+        alert('Message sent!')
+      } else {
+        alert('Something went wrong, message was not sent!')
+      }
     }
   };
 
@@ -60,14 +81,14 @@ const Messages = () => {
         <h2>Leave us a message <br /> for any information.</h2>
         <div className="message-box">
             <form id="contactForm" onSubmit={handleSubmit} method="post" noValidate>
-                <input className="" type="text" id="inputName" name="inputName" placeholder="Name&#42;" />
-                <p className="textError">{nameError}</p>
+                <input type="text" id="inputName" name="inputName" placeholder="Name&#42;" />
+                <p className="errorMessage">{nameError}</p>
 
                 <input type="email" id="inputEmail" name="inputEmail" placeholder="Email&#42;" />
-                <p className="textError">{emailError}</p>
+                <p className="errorMessage">{emailError}</p>
 
                 <textarea id="textareaMessage" name="textareaMessage" placeholder="Your Message&#42;"></textarea>
-                <p className="textError">{messageError}</p>
+                <p className="errorMessage">{messageError}</p>
 
                 <button type="submit" className="btn-yellow">Send Message <i className="fa-regular fa-arrow-up-right"></i></button>
             </form>
