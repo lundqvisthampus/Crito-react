@@ -24,39 +24,33 @@ const Messages = () => {
   }
 
   const validateMessage = (messageValue) => {
-    if (messageValue.length >= 10)
+    if (messageValue.length >= 1)
       return true
     return false
   }
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const emailValue = e.target.inputEmail.value;
-    const nameValue = e.target.inputName.value;
-    const messageValue = e.target.textareaMessage.value;
 
-    if (!validateEmail(emailValue)) {
+    if (!validateEmail(email)) {
       setEmailError('Please enter a valid email address.')
     } else {
       setEmailError('')
-      setEmail(emailValue)
     }
 
-    if (!validateName(nameValue)) {
+    if (!validateName(name)) {
       setNameError('Please enter a valid name.')
     } else {
       setNameError('')
-      setName(nameValue)
     }
 
-    if (!validateMessage(messageValue)) {
+    if (!validateMessage(message)) {
       setMessageError('Your message needs to contain at least 10 characters.')
     } else {
       setMessageError('')
-      setMessage(messageValue)
     }
 
-    if (validateEmail(emailValue) && validateName(nameValue) && validateMessage(messageValue)) {
+    if (validateEmail(email) && validateName(name) && validateMessage(message)) {
       
       const result = await fetch('https://win23-assignment.azurewebsites.net/api/contactform', {
         method: 'post',
@@ -81,13 +75,13 @@ const Messages = () => {
         <h2>Leave us a message <br /> for any information.</h2>
         <div className="message-box">
             <form id="contactForm" onSubmit={handleSubmit} method="post" noValidate>
-                <input type="text" id="inputName" name="inputName" placeholder="Name&#42;" />
+                <input type="text" id="inputName" name="inputName" value={name} placeholder="Name&#42;" onChange={(e) => setName(e.target.value)} />
                 <p className="errorMessage">{nameError}</p>
 
-                <input type="email" id="inputEmail" name="inputEmail" placeholder="Email&#42;" />
+                <input type="email" id="inputEmail" name="inputEmail" value={email} placeholder="Email&#42;" onChange={(e) => setEmail(e.target.value)} />
                 <p className="errorMessage">{emailError}</p>
 
-                <textarea id="textareaMessage" name="textareaMessage" placeholder="Your Message&#42;"></textarea>
+                <textarea id="textareaMessage" name="textareaMessage" value={message} placeholder="Your Message&#42;" onChange={(e) => setMessage(e.target.value)}></textarea>
                 <p className="errorMessage">{messageError}</p>
 
                 <button type="submit" className="btn-yellow">Send Message <i className="fa-regular fa-arrow-up-right"></i></button>
