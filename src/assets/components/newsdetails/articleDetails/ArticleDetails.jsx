@@ -2,6 +2,7 @@ import React from 'react'
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import RecentPosts from './RecentPosts';
+import Category from './Category';
 
 const ArticleDetails = () => {
 
@@ -23,8 +24,8 @@ const ArticleDetails = () => {
     const date = new Date(article.published)
     
     const allMonths = [
-        'JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 
-        'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC', 
+        'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 
+        'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec', 
     ]
 
     const day = date.getDate();
@@ -73,28 +74,18 @@ const ArticleDetails = () => {
                 <div className="recentPostsBox">
                     <h4>Recent Posts</h4>
                     <RecentPosts title="How To Blow Through Capital At An Incredible Rate" date="Jan 14, 2020" />
-                    
-                    <div className="recentPost">
-                        <p className="postTitle">Design Studios That Everyone Should Know About?</p>
-                        <p className="postDate">Jan 14, 2020</p>
-                    </div>
-                    <div className="recentPost">
-                        <p className="postTitle">How did we get 1M+ visitors in 30 days without anything!</p>
-                        <p className="postDate">Jan 14, 2020</p>
-                    </div>
-                    <div id="noBorder" className="recentPost">
-                        <p className="postTitle">Figma On Figma: How We Built Our Website Design System</p>
-                        <p className="postDate">Jan 14, 2020</p>
-                    </div>
+                    <RecentPosts title="Design Studios That Everyone Should Know About?" date="Jan 14, 2020" />
+                    <RecentPosts title="How did we get 1M+ visitors in 30 days without anything!" date="Jan 14, 2020" />
+                    <RecentPosts title="Figma On Figma: How We Built Our Website Design System" date="Jan 14, 2020" />
                 </div>
                 <div className="categoriesBox">
                     <h4>Categories</h4>
-                    <p>Technology - <span>20 Posts</span></p>
-                    <p>Freelancing - <span>07 Posts</span></p>
-                    <p>Writing - <span>16 Posts</span></p>
-                    <p>Marketing - <span>11 Posts</span></p>
-                    <p>Business - <span>35 Posts</span></p>
-                    <p>Education - <span>14 Posts</span></p>
+                    <Category title="Technology" postAmount="20"/>
+                    <Category title="Freelancing" postAmount="07"/>
+                    <Category title="Writing" postAmount="16"/>
+                    <Category title="Marketing" postAmount="11"/>
+                    <Category title="Business" postAmount="35"/>
+                    <Category title="Education" postAmount="14"/>
                 </div>
             </div>
         </div>
