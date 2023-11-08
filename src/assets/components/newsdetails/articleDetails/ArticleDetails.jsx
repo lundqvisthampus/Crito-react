@@ -19,13 +19,25 @@ const ArticleDetails = () => {
         getArticle()
     }, [id])
 
+    const date = new Date(article.published)
+    
+    const allMonths = [
+        'JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 
+        'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC', 
+    ]
+
+    const day = date.getDate();
+    const month = date.getMonth();
+    const year = date.getFullYear();
+    const convertedDate = `${allMonths[month]} ${day}, ${year}`;
+
   return (
     <section className="articleDetails">
         <div className="container">
             <div className="leftContent">
                 <div className="articleInfo">
                     <h2>{article.title}</h2>
-                    <p className="dateClass">{article.published}</p>
+                    <p className="dateClass">{convertedDate}</p>
                     <span className="yellowDot"></span>
                     <p className="categoryClass">{article.category}</p>
                     <span className="yellowDot"></span>

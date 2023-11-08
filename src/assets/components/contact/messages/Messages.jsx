@@ -24,7 +24,7 @@ const Messages = () => {
   }
 
   const validateMessage = (messageValue) => {
-    if (messageValue.length >= 1)
+    if (messageValue.length >= 10)
       return true
     return false
   }
@@ -68,6 +68,7 @@ const Messages = () => {
         alert('Something went wrong, message was not sent!')
       }
     }
+
   };
 
   return (
