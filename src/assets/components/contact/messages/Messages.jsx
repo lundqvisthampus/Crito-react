@@ -18,7 +18,8 @@ const Messages = () => {
   }
 
   const validateName = (nameValue) => {
-    if (nameValue.length >= 2)
+    const namePattern = /^([a-öA-Ö ]){2,30}$/;
+    if (namePattern.test(nameValue))
       return true
     return false
   }

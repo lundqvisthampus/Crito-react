@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import RecentPosts from './RecentPosts';
 
 const ArticleDetails = () => {
 
@@ -71,10 +72,8 @@ const ArticleDetails = () => {
                 <i className="fa-solid fa-magnifying-glass"></i>
                 <div className="recentPostsBox">
                     <h4>Recent Posts</h4>
-                    <div className="recentPost">
-                        <p className="postTitle">How To Blow Through Capital At An Incredible Rate</p>
-                        <p className="postDate">Jan 14, 2020</p>
-                    </div>
+                    <RecentPosts title="How To Blow Through Capital At An Incredible Rate" date="Jan 14, 2020" />
+                    
                     <div className="recentPost">
                         <p className="postTitle">Design Studios That Everyone Should Know About?</p>
                         <p className="postDate">Jan 14, 2020</p>
