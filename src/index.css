@@ -925,6 +925,7 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
 .article-news-section .container .articles-and-news .article {
   color: #191919;
   text-decoration: none;
+  position: relative;
 }
 .article-news-section .container .articles-and-news .article img {
   margin-top: 60px;
@@ -956,6 +957,21 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
 }
 .article-news-section .container .articles-and-news .article p {
   color: #636363;
+}
+.article-news-section .container .articles-and-news .article .articleDate {
+  background-color: #F9D783;
+  display: inline-block;
+  padding: 0px 14px;
+  position: absolute;
+  top: 30px;
+  left: 10px;
+}
+.article-news-section .container .articles-and-news .article .articleDate .dayDate {
+  font-size: 22px;
+  font-weight: 700;
+}
+.article-news-section .container .articles-and-news .article .articleDate .monthDate {
+  margin-top: -15px;
 }
 .article-news-section .container .multiple-dots {
   padding-top: 40px;
@@ -1001,6 +1017,7 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
 .article-news-section2 .container .articles-and-news .article {
   color: #191919;
   text-decoration: none;
+  position: relative;
 }
 .article-news-section2 .container .articles-and-news .article img {
   margin-top: 60px;
@@ -1032,6 +1049,21 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
 }
 .article-news-section2 .container .articles-and-news .article p {
   color: #636363;
+}
+.article-news-section2 .container .articles-and-news .article .articleDate {
+  background-color: #F9D783;
+  display: inline-block;
+  padding: 0px 14px;
+  position: absolute;
+  top: 30px;
+  left: 10px;
+}
+.article-news-section2 .container .articles-and-news .article .articleDate .dayDate {
+  font-size: 22px;
+  font-weight: 700;
+}
+.article-news-section2 .container .articles-and-news .article .articleDate .monthDate {
+  margin-top: -15px;
 }
 .article-news-section2 .container .multiple-dots {
   padding-top: 40px;

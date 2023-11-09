@@ -19,7 +19,6 @@ const OurNews = () => {
     getArticles()
   },[]);
 
-    
   const allMonths = [
       'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 
       'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec', 
@@ -31,8 +30,6 @@ const OurNews = () => {
       <div className="ourArticles">
         {articles.map(article => {
             const date = new Date(article.published)
-            const day = date.getDate();
-            const month = date.getMonth();
 
             return (
             <Link className="article" to={`/newsdetails/${article.id}`} key={article.id}>
@@ -42,14 +39,14 @@ const OurNews = () => {
               <p>{article.content}</p>
               <div className="articleDate">
                 <div className="dayDate">
-                  {day}
+                  {date.getDate()}
                 </div>
                 <div className="monthDate">
-                  {allMonths[month]}
+                  {allMonths[date.getMonth()]}
                 </div>
               </div>
             </Link>
-          )
+            )
         })}
       </div>
 
