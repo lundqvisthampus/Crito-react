@@ -4,8 +4,11 @@ import { useState } from 'react';
 const Messages = () => {
 
   const [emailError, setEmailError] = useState('');
+  const [emailErrorClass, setEmailErrorClass] = useState('');
   const [nameError, setNameError] = useState('');
+  const [nameErrorClass, setNameErrorClass] = useState('');
   const [messageError, setMessageError] = useState('');
+  const [messageErrorClass, setMessageErrorClass] = useState('');
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
@@ -35,20 +38,26 @@ const Messages = () => {
 
     if (!validateEmail(email)) {
       setEmailError('Please enter a valid email address.')
+      setEmailErrorClass('error')
     } else {
       setEmailError('')
+      setEmailErrorClass('')
     }
 
     if (!validateName(name)) {
       setNameError('Please enter a valid name.')
+      setNameErrorClass('error')
     } else {
       setNameError('')
+      setNameErrorClass('')
     }
 
     if (!validateMessage(message)) {
       setMessageError('Your message needs to contain at least 10 characters.')
+      setMessageErrorClass('error')
     } else {
       setMessageError('')
+      setMessageErrorClass('')
     }
 
     if (validateEmail(email) && validateName(name) && validateMessage(message)) {
@@ -77,13 +86,13 @@ const Messages = () => {
         <h2>Leave us a message <br /> for any information.</h2>
         <div className="message-box">
             <form id="contactForm" onSubmit={handleSubmit} method="post" noValidate>
-                <input type="text" id="inputName" name="inputName" value={name} placeholder="Name&#42;" onChange={(e) => setName(e.target.value)} />
+                <input className={nameErrorClass} type="text" id="inputName" name="inputName" value={name} placeholder="Name&#42;" onChange={(e) => setName(e.target.value)} />
                 <p className="errorMessage">{nameError}</p>
 
-                <input type="email" id="inputEmail" name="inputEmail" value={email} placeholder="Email&#42;" onChange={(e) => setEmail(e.target.value)} />
+                <input className={emailErrorClass} type="email" id="inputEmail" name="inputEmail" value={email} placeholder="Email&#42;" onChange={(e) => setEmail(e.target.value)} />
                 <p className="errorMessage">{emailError}</p>
 
-                <textarea id="textareaMessage" name="textareaMessage" value={message} placeholder="Your Message&#42;" onChange={(e) => setMessage(e.target.value)}></textarea>
+                <textarea className={messageErrorClass} id="textareaMessage" name="textareaMessage" value={message} placeholder="Your Message&#42;" onChange={(e) => setMessage(e.target.value)}></textarea>
                 <p className="errorMessage">{messageError}</p>
 
                 <button type="submit" className="btn-yellow">Send Message <i className="fa-regular fa-arrow-up-right"></i></button>

@@ -17,21 +17,42 @@ const OurNews = () => {
 
   useEffect(() => {
     getArticles()
-  },[])
+  },[]);
+
+    
+  const allMonths = [
+      'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 
+      'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec', 
+  ]
 
   return (
     <div className="container">
       <h2 className="newsHeader">Our News & Articles</h2>
       <div className="ourArticles">
-        {articles.map(article => (
-          <Link className="article" to={`/newsdetails/${article.id}`} key={article.id}>
-            <img src={article.imageUrl}/>
-            <p>{article.category}</p>
-            <h3>{article.title}</h3>
-            <p>{article.content}</p>
-          </Link>
-          ))}
+        {articles.map(article => {
+            const date = new Date(article.published)
+            const day = date.getDate();
+            const month = date.getMonth();
+
+            return (
+            <Link className="article" to={`/newsdetails/${article.id}`} key={article.id}>
+              <img src={article.imageUrl}/>
+              <p>{article.category}</p>
+              <h3>{article.title}</h3>
+              <p>{article.content}</p>
+              <div className="articleDate">
+                <div className="dayDate">
+                  {day}
+                </div>
+                <div className="monthDate">
+                  {allMonths[month]}
+                </div>
+              </div>
+            </Link>
+          )
+        })}
       </div>
+
       <div className="center-content">
           <NumberedButtons content="&lt;" />
           <NumberedButtons content="1" />

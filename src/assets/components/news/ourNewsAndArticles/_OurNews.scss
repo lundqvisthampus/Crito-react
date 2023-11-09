@@ -16,6 +16,7 @@
         .article {
             color: #191919;
             text-decoration: none;
+            position: relative;
 
             img {
                 margin-top: 60px;
@@ -50,6 +51,24 @@
 
             p {
                 color:#636363;
+            }
+
+            .articleDate {
+                background-color: #F9D783;
+                display: inline-block;
+                padding: 0px 14px;
+                position: absolute;
+                top: 30px;
+                left: 10px;
+
+                .dayDate {
+                    font-size: 22px;
+                    font-weight: 700;
+                }
+
+                .monthDate {
+                    margin-top: -15px;
+                }
             }
         }
     }

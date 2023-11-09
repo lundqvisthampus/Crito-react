@@ -1370,6 +1370,7 @@ footer .bottom-footer .container .socialmedia-bar a:hover {
 .container .ourArticles .article {
   color: #191919;
   text-decoration: none;
+  position: relative;
 }
 .container .ourArticles .article img {
   margin-top: 60px;
@@ -1401,6 +1402,21 @@ footer .bottom-footer .container .socialmedia-bar a:hover {
 }
 .container .ourArticles .article p {
   color: #636363;
+}
+.container .ourArticles .article .articleDate {
+  background-color: #F9D783;
+  display: inline-block;
+  padding: 0px 14px;
+  position: absolute;
+  top: 30px;
+  left: 10px;
+}
+.container .ourArticles .article .articleDate .dayDate {
+  font-size: 22px;
+  font-weight: 700;
+}
+.container .ourArticles .article .articleDate .monthDate {
+  margin-top: -15px;
 }
 .container .center-content {
   padding-top: 40px;
