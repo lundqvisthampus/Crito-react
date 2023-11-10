@@ -9,6 +9,8 @@ const Messages = () => {
   const [nameErrorClass, setNameErrorClass] = useState('');
   const [messageError, setMessageError] = useState('');
   const [messageErrorClass, setMessageErrorClass] = useState('');
+  const [statusClass, setStatusClass] = useState('');
+  const [statusMessage, setStatusMessage] = useState('');
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
@@ -28,7 +30,7 @@ const Messages = () => {
   }
 
   const validateMessage = (messageValue) => {
-    if (messageValue.length >= 10)
+    if (messageValue.length >= 1)
       return true
     return false
   }
@@ -73,9 +75,11 @@ const Messages = () => {
       })
 
       if (result.status === 200) {
-        alert('Message sent!')
+        setStatusMessage('Your message was sent successfully!')
+        setStatusClass('statusSuccess')
       } else {
-        alert('Something went wrong, message was not sent!')
+        setStatusMessage('Something went wrong, message was not sent!')
+        setStatusClass('statusError')
       }
     }
 
@@ -83,6 +87,7 @@ const Messages = () => {
 
   return (
     <div className="container message-container">
+        <p className={statusClass}>{statusMessage}</p>
         <h2>Leave us a message <br /> for any information.</h2>
         <div className="message-box">
             <form id="contactForm" onSubmit={handleSubmit} method="post" noValidate>
