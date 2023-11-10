@@ -2,7 +2,7 @@ import React from 'react'
 import Header from '../components/header/Header'
 import UpperSection from '../components/uppersection/UpperSection'
 import ArticleDetails from '../components/newsdetails/articleDetails/ArticleDetails'
-import Articleandnews2 from '../components/home/articleandnews/Articleandnews2'
+import Articleandnews from '../components/home/articleandnews/Articleandnews'
 import Footer from '../components/footer/Footer'
 
 const NewsDetails = () => {
@@ -12,7 +12,7 @@ const NewsDetails = () => {
       <main>
         <UpperSection page="News" header="News & Articles" />
         <ArticleDetails />
-        <Articleandnews2 />
+        <Articleandnews type="-grey" />
       </main>
       <Footer />
     </div>

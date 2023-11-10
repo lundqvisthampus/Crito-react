@@ -27,7 +27,7 @@ const Home = () => {
         <ProjectAndCaseStudies />
         <Meetourteam />
         <Testimonial />
-        <Articleandnews />
+        <Articleandnews type="-white" />
         <Newsletter />
       </main>
       <Footer />

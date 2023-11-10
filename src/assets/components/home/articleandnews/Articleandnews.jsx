@@ -5,9 +5,9 @@ import ButtonDots from '../../generics/ButtonDots'
 import Article from './Article'
 
 
-const Articleandnews = () => {
+const Articleandnews = ({type}) => {
   return (
-    <section className="article-news-section">
+    <section className={`article-news-section${type}`}>
         <div className="container">
             <div className="top-row">
                 <SectionTitle paragraph="Article & News" header="Get Every Single Articles & News" />
