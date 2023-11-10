@@ -7,10 +7,12 @@ import News from './assets/views/News';
 import NewsDetails from './assets/views/NewsDetails';
 import './index.css';
 import ScrollToTop from './assets/components/ScrollToTop';
+import { ArticleProvider } from './assets/contexts/ArticleContext';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
+      <ArticleProvider>
       <ScrollToTop />
       <Routes>
         <Route path='/' element={<Home />} />
@@ -18,6 +20,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path='/news' element={<News />} />
         <Route path='/newsdetails/:id' element={<NewsDetails />} />
       </Routes>
+      </ArticleProvider>
     </BrowserRouter>
   </React.StrictMode>
 )

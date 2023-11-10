@@ -1,23 +1,11 @@
 import React from 'react'
-import { useState, useEffect } from 'react'
 import NumberedButtons from '../../generics/NumberedButtons';
 import { Link } from 'react-router-dom';
+import { useArticles } from '../../../contexts/ArticleContext';
 
 const OurNews = () => {
 
-  const [articles, setArticles] = useState([]);
-
-  const getArticles = async () => {
-    const result = await fetch('https://win23-assignment.azurewebsites.net/api/articles');
-
-    if (result.status === 200) {
-      setArticles(await result.json())
-    }
-  }
-
-  useEffect(() => {
-    getArticles()
-  },[]);
+  const { articles } = useArticles()
 
   const allMonths = [
       'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 

@@ -1,22 +1,15 @@
 import React from 'react'
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
+import { useArticles } from '../../../contexts/ArticleContext';
 
 const Article = () => {
 
-  const [articles, setArticles] = useState([]);
+  const { threeArticles, getThreeArticles } = useArticles()
 
-  const getArticles = async () => {
-    const fetchArticles = await fetch ('https://win23-assignment.azurewebsites.net/api/articles?take=3');
-
-    if (fetchArticles.status === 200) {
-      setArticles(await fetchArticles.json())
-    }
-  }
-
-  useEffect(() => {
-    getArticles()
-  },[])
+    useEffect(() => {
+      getThreeArticles()
+    }, [])
 
   const allMonths = [
     'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 
@@ -26,7 +19,7 @@ const Article = () => {
   return (
     <>
       {
-        articles.map(article => {
+        threeArticles.map(article => {
           const date = new Date(article.published)
 
           return (

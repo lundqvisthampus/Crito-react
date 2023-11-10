@@ -1,37 +1,26 @@
 import React from 'react'
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import RecentPosts from './RecentPosts';
 import Category from './Category';
+import { useArticles } from '../../../contexts/ArticleContext';
 
 const ArticleDetails = () => {
 
-    const [article, setArticle] = useState({})
+    const { article, getArticle } = useArticles()
     const { id } = useParams()
 
-    const getArticle = async () => {
-        const result = await fetch(`https://win23-assignment.azurewebsites.net/api/articles/${id}`)
-
-        if (result.status === 200) {
-            setArticle(await result.json());
-        }
-    }
-
     useEffect(() => {
-        getArticle()
-    }, [id])
+        getArticle(id)
+    }, [])
 
-    const date = new Date(article.published)
-    
     const allMonths = [
         'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 
         'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec', 
     ]
 
-    const day = date.getDate();
-    const month = date.getMonth();
-    const year = date.getFullYear();
-    const convertedDate = `${allMonths[month]} ${day}, ${year}`;
+    const date = new Date(article.published)
+    const convertedDate = `${allMonths[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}`;
 
   return (
     <section className="articleDetails">
