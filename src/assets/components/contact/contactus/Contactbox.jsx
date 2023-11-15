@@ -1,13 +1,13 @@
 import React from 'react'
 
-const Contactbox = ({ icon, title, upperText, lowerText, url }) => {
+const Contactbox = (props) => {
   return (
-    <a className="contact-box" href={url} target="_blank">
-        <i className={icon}></i>
+    <a className="contact-box" href={props.url} target="_blank">
+        <i className={props.icon}></i>
         <div className="contact-info">
-            <h3>{title}</h3>
-            <p>{upperText}</p>
-            <p>{lowerText}</p>
+            <h3>{props.title}</h3>
+            <p>{props.upperText}</p>
+            <p>{props.lowerText}</p>
         </div>
     </a> 
   )

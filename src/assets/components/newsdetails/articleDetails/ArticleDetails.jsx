@@ -12,7 +12,7 @@ const ArticleDetails = () => {
 
     useEffect(() => {
         getArticle(id)
-    }, [])
+    }, [id])
 
     const allMonths = [
         'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 

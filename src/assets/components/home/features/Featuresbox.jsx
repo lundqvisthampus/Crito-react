@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Featuresbox = ({icon, title, text}) => {
+const Featuresbox = (props) => {
   return (
     <div className="advice-box">
-        <i className={icon}></i>
-        <h3>{title}</h3>
-        <p>{text}</p>
+        <i className={props.icon}></i>
+        <h3>{props.title}</h3>
+        <p>{props.text}</p>
     </div>
   )
 }
