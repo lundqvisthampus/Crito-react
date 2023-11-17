@@ -80,8 +80,6 @@ const Messages = () => {
         })
       })
 
-      clearForm();
-
       if (result.status === 200) {
         setStatusMessage('Your message was sent successfully!')
         setStatusClass('statusSuccess')
@@ -89,8 +87,9 @@ const Messages = () => {
         setStatusMessage('Something went wrong, message was not sent!')
         setStatusClass('statusError')
       }
-    }
 
+      clearForm();
+    }
   };
 
   return (
