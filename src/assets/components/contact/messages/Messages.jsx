@@ -30,9 +30,15 @@ const Messages = () => {
   }
 
   const validateMessage = (messageValue) => {
-    if (messageValue.length >= 1)
+    if (messageValue.length >= 10)
       return true
     return false
+  }
+
+  const clearForm = () => {
+    setName('')
+    setEmail('')
+    setMessage('')
   }
 
   const handleSubmit = async (e) => {
@@ -73,6 +79,8 @@ const Messages = () => {
           name, email, message
         })
       })
+
+      clearForm();
 
       if (result.status === 200) {
         setStatusMessage('Your message was sent successfully!')
